@@ -1,0 +1,70 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0fff4;
+  color: #2f855a;
+  min-height: 100vh; /* Esto asegura que el body ocupe siempre al menos la altura de la pantalla */
+  display: block; /* Asegura que no afecte el flujo de los elementos, por si necesitas revertir flexbox */
+}
+
+header {
+  background-color: #2f855a;
+  color: white;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+}
+
+.logo {
+  position: absolute;
+  left: 1rem;
+  width: 50px;
+  height: 50px;
+  border-radius: 35%;
+}
+
+h1 {
+  font-size: 2rem;
+  margin: 0;
+}
+
+main {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+  flex-grow: 1;
+  padding-bottom: 3.9rem; /* Esto asegura que haya espacio para el pie de página si el contenido es corto */
+}
+
+.columns {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.column {
+  flex: 1;
+  min-width: 300px;
+}
+
+h2 {
+  color: #2f855a;
+}
+
+video {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
+footer {
+  background-color: #2f855a;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: flex; /* Esto empuja el pie al fondo si el contenido es pequeño */
+}

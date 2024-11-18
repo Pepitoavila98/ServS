@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sendero Ecológico</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Incluir el archivo KRPano JS para la versión HTML5 -->
+    <script src="tour.js"></script> <!-- Ruta al archivo krpano.js -->
+    <include url="Pamo_invierno/vtour/skin/vtourskin.xml" />
+</head>
+<body>
+    <header>
+        <img src="descarga60x60.png" alt="Logo" class="logo">
+        <h1>Sendero Ecológico</h1>
+    </header>
+
+    <main>
+        <div class="columns">
+            <!-- Columna izquierda: Recorrido Virtual Verano -->
+            <div class="column">
+                <h2>Recorrido Virtual Verano</h2>
+                <!-- Contenedor para el recorrido de verano con KRPano HTML5 -->
+                <div id="tour" style="width: 100%; height: 315px;">
+                    <!-- Visor KRPano HTML5 -->
+                    <script>
+                        embedpano({swf:"Pano_invierno/vtour/tour.js", xml:"Pano_invierno/vtour/tour.xml", target:"tour", html5:"auto"});
+                    </script>
+                </div>
+            </div>
+
+            <!-- Columna derecha: Recorrido Virtual Invierno -->
+            <div class="column">
+                <h2>Recorrido Virtual Invierno</h2>
+                <!-- Contenedor para el recorrido de invierno con KRPano HTML5 -->
+                <div id="pano_invierno" style="width: 100%; height: 315px;">
+                    <!-- Visor KRPano HTML5 -->
+                    <script>
+                        embedpano({swf:"krpano.swf", xml:"tour_invierno.xml", target:"pano_invierno", html5:"auto"});
+                    </script>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Sendero Ecológico. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
